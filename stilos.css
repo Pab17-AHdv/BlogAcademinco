@@ -1,0 +1,207 @@
+    :root {
+        --bg-header: #cbe0f0;
+        --primary-blue: #006699;
+        --text-color: #333333;
+        --bg-body: #f8f9fa;
+        --card-bg: #ffffff;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg-body);
+        color: var(--text-color);
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem 4rem;
+        background-color: #ffffff;
+        gap: 2rem;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #334155;
+        font-weight: 600;
+        font-size: 0.95rem;
+    }
+
+    nav a:hover {
+        color: var(--primary-blue);
+    }
+
+    .intro-section {
+        background-color: var(--bg-header);
+        padding: 3rem 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4rem;
+
+    }
+
+    .intro-image-container {
+        flex: 1;
+        max-width: 45%;
+    }
+
+    .intro-image-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        display: block;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .intro-text-container {
+        flex: 1;
+        max-width: 50%;
+    }
+
+    .intro-text-container h1 {
+        font-size: 2rem;
+        color: #1e293b;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .intro-text-container p {
+        font-size: 1.05rem;
+        line-height: 1.6;
+        color: #334155;
+        margin-bottom: 1rem;
+    }
+
+    .main-container {
+        max-width: 1200px;
+        margin: 3rem auto;
+        padding: 0 2rem;
+    }
+
+    .topics-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .card {
+        background-color: var(--card-bg);
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.2s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        background-color: #e2e8f0;
+    }
+
+    .card-content {
+        padding: 1.8rem;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .card-content h3 {
+        font-size: 1.25rem;
+        color: #0f172a;
+        margin-top: 0;
+        margin-bottom: 0.8rem;
+        text-transform: uppercase;
+    }
+
+    .card-content p {
+        font-size: 0.95rem;
+        color: #475569;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+        flex-grow: 1;
+    }
+
+
+    .btn-more {
+        align-self: flex-start;
+        background-color: var(--primary-blue);
+        color: white;
+        text-decoration: none;
+        padding: 0.6rem 1.5rem;
+        border-radius: 6px;
+        font-size: 0.85rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-more:hover {
+        background-color: #004f77;
+    }
+
+    footer {
+        text-align: center;
+        padding: 2rem;
+        background-color: #1e293b;
+        color: white;
+        margin-top: 5rem;
+        font-size: 0.9rem;
+    }
+
+
+    @media (max-width: 768px) {
+        .intro-section {
+            flex-direction: column-reverse;
+            padding: 2rem;
+            gap: 2rem;
+        }
+
+        .intro-text-container,
+        .intro-image-container {
+            max-width: 100%;
+        }
+
+        .topics-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /* Quita el subrayado y el color azul automático de la tarjeta */
+    .card {
+        text-decoration: none;
+        /* Elimina la línea de abajo */
+        color: inherit;
+        /* Hace que el texto use el color que ya tenías configurado */
+        display: block;
+        /* Asegura que toda la caja se comporte como un bloque sólido */
+    }
+
+    /* Evita que los títulos y párrafos cambien de color por ser enlaces */
+    .card h3,
+    .card p {
+        color: var(--text-color);
+        /* Obliga a usar tu variable de color oscuro */
+    }
+
+    /* Opcional: Un efecto elegante para cuando pases el mouse por encima */
+    .card:hover {
+        transform: translateY(-5px);
+        /* Eleva un poquito la tarjeta */
+        transition: all 0.3s ease;
+        /* Hace que el movimiento sea suave */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        /* Le da una pequeña sombra al flotar */
+    }
