@@ -33,48 +33,86 @@
         color: var(--primary-blue);
     }
 
-    .intro-section {
-        background-color: var(--bg-header);
-        padding: 3rem 4rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 4rem;
+    /* --- ACTUALIZACIÓN INTRODUCCIÓN PRINCIPAL (Mismo estilo que los temas) --- */
 
+    /* Encabezado oscuro idéntico al del tema */
+    .main-intro-header {
+        background: #1e293b;
+        /* El fondo azul oscuro de la imagen image_c44b9e.png */
+        color: #ffffff;
+        padding: 50px 20px;
+        text-align: center;
+        border-bottom: 4px solid #0284c7;
     }
 
+    /* Reutilizamos los estilos del texto de cabecera */
+    .main-intro-header .header-overlay span {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #38bdf8;
+        /* El celeste brillante de la etiqueta */
+        letter-spacing: 2px;
+        font-size: 0.9rem;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .main-intro-header .header-overlay h1 {
+        font-size: 2.4rem;
+        margin: 0;
+        font-weight: 700;
+    }
+
+    /* Contenedor del contenido inferior (Imagen + Texto) */
+    .intro-content-container {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        /* Alinea verticalmente la foto y el texto */
+    }
+
+    /* Contenedor de la imagen */
     .intro-image-container {
         flex: 1;
-        max-width: 45%;
+        min-width: 300px;
     }
 
     .intro-image-container img {
         width: 100%;
         height: auto;
         border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         display: block;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        background: #e2e8f0;
+        /* Color gris de respaldo si no hay foto */
     }
 
+    /* Contenedor del texto */
     .intro-text-container {
-        flex: 1;
-        max-width: 50%;
-    }
-
-    .intro-text-container h1 {
-        font-size: 2rem;
-        color: #1e293b;
-        margin-top: 0;
-        margin-bottom: 1rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
+        flex: 1.2;
     }
 
     .intro-text-container p {
         font-size: 1.05rem;
-        line-height: 1.6;
         color: #334155;
-        margin-bottom: 1rem;
+        line-height: 1.7;
+        margin-bottom: 20px;
+    }
+
+    /* Ajuste responsive para celulares */
+    @media (max-width: 768px) {
+        .intro-content-container {
+            flex-direction: column;
+            /* Apila la foto arriba del texto en móviles */
+            gap: 20px;
+        }
+
+        .main-intro-header .header-overlay h1 {
+            font-size: 1.8rem;
+        }
     }
 
     .main-container {
