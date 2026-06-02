@@ -33,24 +33,24 @@
         color: var(--primary-blue);
     }
 
-    /* --- ACTUALIZACIÓN INTRODUCCIÓN PRINCIPAL (Mismo estilo que los temas) --- */
+    
 
-    /* Encabezado oscuro idéntico al del tema */
+    
     .main-intro-header {
         background: #1e293b;
-        /* El fondo azul oscuro de la imagen image_c44b9e.png */
+        
         color: #ffffff;
         padding: 50px 20px;
         text-align: center;
         border-bottom: 4px solid #0284c7;
     }
 
-    /* Reutilizamos los estilos del texto de cabecera */
+    
     .main-intro-header .header-overlay span {
         text-transform: uppercase;
         font-weight: bold;
         color: #38bdf8;
-        /* El celeste brillante de la etiqueta */
+        
         letter-spacing: 2px;
         font-size: 0.9rem;
         display: block;
@@ -63,7 +63,7 @@
         font-weight: 700;
     }
 
-    /* Contenedor del contenido inferior (Imagen + Texto) */
+    
     .intro-content-container {
         max-width: 1200px;
         margin: 40px auto;
@@ -71,10 +71,10 @@
         display: flex;
         gap: 40px;
         align-items: center;
-        /* Alinea verticalmente la foto y el texto */
+        
     }
 
-    /* Contenedor de la imagen */
+    
     .intro-image-container {
         flex: 1;
         min-width: 300px;
@@ -87,10 +87,10 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         display: block;
         background: #e2e8f0;
-        /* Color gris de respaldo si no hay foto */
+        
     }
 
-    /* Contenedor del texto */
+    
     .intro-text-container {
         flex: 1.2;
     }
@@ -102,11 +102,11 @@
         margin-bottom: 20px;
     }
 
-    /* Ajuste responsive para celulares */
+    
     @media (max-width: 768px) {
         .intro-content-container {
             flex-direction: column;
-            /* Apila la foto arriba del texto en móviles */
+            
             gap: 20px;
         }
 
@@ -217,9 +217,9 @@
         }
     }
 
-    /* --- ESTILOS DE LA PLANTILLA DE TEMAS --- */
+    
 
-    /* Contenedor general del artículo */
+    
     .article-container {
         max-width: 900px;
         margin: 40px auto;
@@ -229,15 +229,15 @@
         color: #333;
     }
 
-    /* Encabezado del artículo (Hero Header) */
+    
     .theme-header {
         background: #1e293b;
-        /* Color oscuro tecnológico de fondo por si no carga imagen */
+        
         color: #ffffff;
         padding: 60px 20px;
         text-align: center;
         border-bottom: 4px solid #0284c7;
-        /* Acento azul */
+        
     }
 
     .header-overlay span {
@@ -253,7 +253,7 @@
         margin-top: 10px;
     }
 
-    /* Títulos de sección */
+    
     .section-title {
         font-size: 1.6rem;
         color: #0f172a;
@@ -263,7 +263,7 @@
         margin-bottom: 20px;
     }
 
-    /* Fila de imágenes dobles */
+    
     .image-double-row {
         display: flex;
         gap: 20px;
@@ -295,7 +295,7 @@
         font-style: italic;
     }
 
-    /* Reflexión Personal */
+    
     .reflection-section {
         background: #f8fafc;
         padding: 30px;
@@ -308,11 +308,11 @@
         margin-top: 20px;
     }
 
-    /* --- RESPONSIVE DESIGN (Para celulares) --- */
+    
     @media (max-width: 768px) {
         .image-double-row {
             flex-direction: column;
-            /* Apila las imágenes una abajo de la otra */
+            
         }
 
         .header-overlay h1 {
@@ -324,34 +324,34 @@
         }
     }
 
-    /* Quita el subrayado y el color azul automático de la tarjeta */
+    
     .card {
         text-decoration: none;
-        /* Elimina la línea de abajo */
+        
         color: inherit;
-        /* Hace que el texto use el color que ya tenías configurado */
+        
         display: block;
-        /* Asegura que toda la caja se comporte como un bloque sólido */
+        
     }
 
-    /* Evita que los títulos y párrafos cambien de color por ser enlaces */
+    
     .card h3,
     .card p {
         color: var(--text-color);
-        /* Obliga a usar tu variable de color oscuro */
+        
     }
 
-    /* Opcional: Un efecto elegante para cuando pases el mouse por encima */
+    
     .card:hover {
         transform: translateY(-5px);
-        /* Eleva un poquito la tarjeta */
+        
         transition: all 0.3s ease;
-        /* Hace que el movimiento sea suave */
+        
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        /* Le da una pequeña sombra al flotar */
+        
     }
 
-    /* --- NUEVO ESTILO: CUADRÍCULA DE EJEMPLOS PRÁCTICOS --- */
+    
 
     .section-subtitle {
         color: #64748b;
@@ -359,7 +359,7 @@
         font-size: 1.05rem;
     }
 
-    /* Contenedor de las minitarjetas */
+    
     .examples-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -367,7 +367,7 @@
         margin-bottom: 35px;
     }
 
-    /* Tarjeta individual de ejemplo */
+    
     .example-card {
         background: #ffffff;
         border: 1px solid #e2e8f0;
@@ -379,15 +379,15 @@
         overflow: hidden;
     }
 
-    /* Efecto sutil al pasar el cursor (fiel al estilo del blog) */
+    
     .example-card:hover {
         transform: translateY(-3px);
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
         border-color: #0284c7;
-        /* Cambia al borde azul de tu marca */
+        
     }
 
-    /* Detalle creativo: Número indicador arriba a la derecha */
+    
     .example-card-icon {
         position: absolute;
         top: 15px;
@@ -404,7 +404,7 @@
         margin-top: 0;
         margin-bottom: 12px;
         padding-right: 30px;
-        /* Evita que el texto choque con el número */
+        
     }
 
     .example-card p {
@@ -414,7 +414,7 @@
         line-height: 1.5;
     }
 
-    /* Ajuste estético para bloques de código dentro de las tarjetas */
+    
     .example-card code {
         background: #f1f5f9;
         padding: 2px 6px;
