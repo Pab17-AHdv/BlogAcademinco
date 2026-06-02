@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 3: El Cerebro Digital - Mi Blog</title>
+    <link rel="stylesheet" href="../stilos.css">
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../index.html#temas">Temas</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <header class="theme-header">
+        <div class="header-overlay">
+            <span>Tema 3</span>
+            <h1>El Cerebro Digital: Arquitectura, Fabricación y el Futuro de los Microprocesadores</h1>
+        </div>
+    </header>
+
+    <main class="article-container">
+        
+        <section class="article-section">
+            <h2 class="section-title">1. Explicación del Concepto: ¿Cómo se fabrican y cómo funcionan?</h2>
+            <div class="section-text">
+                <p>Un microprocesador es el circuito integrado central de una computadora, encargado de ejecutar los programas desde el sistema operativo hasta las aplicaciones[cite: 44].</p>
+                
+                <p><strong>¿Cómo están hechos? (Fabricación casi alienígena):</strong> Los procesadores se fabrican mediante un proceso llamado fotolitografía sobre obleas de silicio (un derivado de la arena)[cite: 45]. Utilizan máquinas de litografía extremas (tecnología EUV de la empresa ASML), las cuales emplean luz ultravioleta avanzada para "dibujar" circuitos a una escala de nanómetros ($3 \text{ o } 2\text{ nm}$)[cite: 46]. Para que te hagas una idea, ¡un nanómetro es miles de veces más delgado que un cabello humano! [cite: 47] Esto permite meter miles de millones de transistores en un chip del tamaño de una uña[cite: 48].</p>
+                
+                <p><strong>¿Cómo funcionan?:</strong> A nivel interno, el procesador funciona mediante un ciclo constante de tres pasos: <em>Fetch</em> (Buscar la instrucción), <em>Decode</em> (Decodificarla) y <em>Execute</em> (Ejecutarla)[cite: 49, 50]. Los transistores se abren o se cierran dejando pasar electricidad o no, lo que genera los ceros ($0$) y unos ($1$) del código binario[cite: 50]. Al procesar miles de millones de estos datos por segundo, la computadora puede mostrar un video, correr un videojuego o ejecutar un algoritmo[cite: 51].</p>
+            </div>
+
+            <div class="image-double-row">
+                <div class="image-wrapper">
+                    <img src="../assets/images/cpu-oblea.jpg" alt="Oblea de silicio con microprocesadores fabricados">
+                    <p class="image-caption">Oblea de silicio pura con miles de circuitos integrados impresos a escala nanométrica.</p>
+                </div>
+                <div class="image-wrapper">
+                    <img src="../assets/images/cpu-transistores.jpg" alt="Esquema del ciclo Fetch Decode Execute">
+                    <p class="image-caption">Representación del ciclo interno de procesamiento (Fetch, Decode, Execute).</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="article-section">
+            <h2 class="section-title">2. Ejemplo Práctico: Arquitecturas Modernas, la IA y la Guerra de los Chips</h2>
+            <p class="section-subtitle">El desarrollo de los microprocesadores ha dejado de ser una evolución lineal para convertirse en una competencia tecnológica y geopolítica brutal a través de tres pilares clave:</p>
+            
+            <div class="examples-grid">
+                
+                <div class="example-card">
+                    <div class="example-card-icon">01</div>
+                    <h3>Arquitecturas de Vanguardia</h3>
+                    <p>Las arquitecturas modernas (como la Zen de AMD Ryzen) revolucionaron el mercado usando un diseño de <strong>"Chiplets"</strong>. En lugar de un solo chip gigante y costoso, unen varios chips pequeños especializados en una sola placa, optimizando la velocidad, reduciendo el consumo y elevando la potencia a niveles brutales[cite: 52, 53].</p>
+                </div>
+
+                <div class="example-card">
+                    <div class="example-card-icon">02</div>
+                    <h3>La Revolución de la IA</h3>
+                    <p>Los chips actuales (como las GPUs de NVIDIA o las NPUs de Intel y AMD) incluyen núcleos de hardware dedicados exclusivamente a la Inteligencia Artificial[cite: 54, 55]. Esto permite que las computadoras procesen modelos de lenguaje y generación de imágenes de forma local y ultrarrápida[cite: 55].</p>
+                </div>
+
+                <div class="example-card">
+                    <div class="example-card-icon">03</div>
+                    <h3>Geopolítica Actual</h3>
+                    <p>Las fábricas más avanzadas del mundo (como TSMC) están en Taiwán y dependen de maquinaria europea y patentes estadounidenses[cite: 56]. Este hardware se ha convertido en el recurso más valioso y disputado entre potencias como EE. UU. y China[cite: 56, 57].</p>
+                </div>
+
+            </div>
+
+            <div class="image-double-row">
+                <div class="image-wrapper">
+                    <img src="../assets/images/cpu-chiplets.jpg" alt="Diseño de arquitectura Chiplets en procesador moderno">
+                    <p class="image-caption">Estructura modular de arquitectura basada en Chiplets.</p>
+                </div>
+                <div class="image-wrapper">
+                    <img src="../assets/images/cpu-ia.jpg" alt="Núcleos NPU dedicados a Inteligencia Artificial en un silicio">
+                    <p class="image-caption">Distribución de núcleos dedicados a IA (NPU) en hardware de vanguardia.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="article-section reflection-section">
+            <h2 class="section-title">3. Reflexión Personal</h2>
+            
+            <div class="reflection-block">
+                <h3>¿Por qué elegí este tema?</h3>
+                <p>Decidí profundizar en los microprocesadores porque es un área vital de la computación de la que se habla muy poco a nivel de detalle en el curso[cite: 59]. Me impactó descubrir la precisión nanométrica con la que se construyen y el hecho de que dependamos a nivel mundial de unas pocas máquinas hiper-especializadas para seguir avanzando tecnológicamente[cite: 60]. Además, la actual "guerra de los chips" impulsada por el auge de la Inteligencia Artificial me hizo ver que la ingeniería de hardware no es solo teoría, sino el motor que mueve la economía y la geopolítica del mundo actual[cite: 61].</p>
+            </div>
+
+            <div class="reflection-block">
+                <h3>¿Dónde se aplica y su importancia profesional?</h3>
+                <p>Se aplica absolutamente en cada dispositivo computacional del planeta, desde un smartphone hasta los servidores de Inteligencia Artificial en la nube[cite: 62]. Para mí, como futuro Ingeniero en Sistemas, entender la arquitectura del hardware (saber cómo interactúa el software que programamos con los transistores físicos del procesador) es fundamental para desarrollar sistemas optimizados, eficientes y preparados para las demandas de la computación moderna y la IA[cite: 63].</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Portafolio de Ingeniería en Sistemas | GitHub Pages</p>
+    </footer>
+
+</body>
+</html>

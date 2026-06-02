@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 5: Ciberseguridad - Mi Blog</title>
+    <link rel="stylesheet" href="../stilos.css">
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../index.html#temas">Temas</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <header class="theme-header">
+        <div class="header-overlay">
+            <span>Tema 5</span>
+            <h1>Amenazas Silenciosas: Cómo se Propaga el Malware y cómo nos Defiende la Ciberseguridad</h1>
+        </div>
+    </header>
+
+    <main class="article-container">
+        
+        <section class="article-section">
+            <h2 class="section-title">1. Explicación del Concepto: Vectores de Infección y la Evolución del Software Malicioso</h2>
+            <div class="section-text">
+                <p>El malware (software malicioso) ha evolucionado drásticamente, dejando de ser simples virus molestos para convertirse en herramientas sofisticadas de espionaje, robo de datos y secuestro de sistemas corporativos.</p>
+                <p><strong>¿Cómo se propaga en la actualidad?</strong> Las ciberamenazas ya no dependen únicamente de que el usuario abra un archivo ejecutable sospechoso. Hoy en día existen técnicas avanzadas como los ataques <strong>"Drive-by Download"</strong>, donde el simple hecho de visitar un sitio web legítimo pero previamente vulnerado por atacantes puede descargar e instalar código malicioso en segundo plano aprovechando brechas en los navegadores desactualizados.</p>
+                <p>Una vez que el malware logra colarse en un solo dispositivo, busca propagarse lateralmente a través de la red local, comprometiendo servidores centrales y paralizando operaciones completas en cuestión de minutos.</p>
+            </div>
+
+            <div class="image-double-row">
+                <div class="image-wrapper">
+                    <img src="../assets/images/sec-malware.jpg" alt="Vectores de infección y propagación de malware">
+                    <p class="image-caption">Flujo de infección silenciosa mediante vectores web y propagación interna.</p>
+                </div>
+                <div class="image-wrapper">
+                    <img src="../assets/images/sec-firewall.jpg" alt="Monitoreo de tráfico y seguridad perimetral">
+                    <p class="image-caption">Bloqueo perimetral y análisis de tráfico de red en busca de anomalías.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="article-section">
+            <h2 class="section-title">2. Ejemplo Práctico: Protocolos de Emergencia en la Infraestructura</h2>
+            <p class="section-subtitle">Cuando los sistemas corporativos e institucionales sufren un incidente o una alerta crítica de seguridad, se activa de inmediato un plan de respuesta conjunta en el área de TI:</p>
+            
+            <div class="examples-grid">
+                
+                <div class="example-card">
+                    <div class="example-card-icon">01</div>
+                    <h3>Aislamiento y Mitigación</h3>
+                    <p>Ante una intrusión, los ingenieros aíslan de inmediato los segmentos de red afectados para cortar la comunicación del malware, evitando que se extienda de una máquina a otras estaciones de trabajo.</p>
+                </div>
+
+                <div class="example-card">
+                    <div class="example-card-icon">02</div>
+                    <h3>Cierre y Aseguramiento</h3>
+                    <p>Se desactivan temporalmente los servidores expuestos o vulnerados y se procede a aplicar parches de seguridad urgentes en los sistemas operativos (muchas veces basados en Linux) para cerrar la brecha explotada.</p>
+                </div>
+
+                <div class="example-card">
+                    <div class="example-card-icon">03</div>
+                    <h3>Defensa Inteligente</h3>
+                    <p>Se despliegan sistemas avanzados de detección heurística y basados en IA, los cuales no buscan virus conocidos, sino que analizan comportamientos extraños del sistema para detener amenazas nuevas antes de que actúen.</p>
+                </div>
+
+            </div>
+
+            <div class="image-double-row">
+                <div class="image-wrapper">
+                    <img src="../assets/images/sec-incident.jpg" alt="Consola del centro de operaciones de seguridad SOC">
+                    <p class="image-caption">Monitoreo continuo en un Centro de Operaciones de Seguridad (SOC) durante un incidente.</p>
+                </div>
+                <div class="image-wrapper">
+                    <img src="../assets/images/sec-patch.jpg" alt="Consola aplicando actualizaciones y parches de seguridad">
+                    <p class="image-caption">Despliegue y aplicación automatizada de parches críticos en servidores de red.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="article-section reflection-section">
+            <h2 class="section-title">3. Reflexión Personal</h2>
+            
+            <div class="reflection-block">
+                <h3>¿Por qué elegí este tema?</h3>
+                <p>Decidí abordar el malware y la seguridad informática porque en clase se suelen aprender las definiciones teóricas de los virus, pero no el trasfondo de cómo operan en la vida real. Me llamó mucho la atención comprender que todo está conectado: desde un simple software no deseado en un teléfono móvil hasta las alertas críticas de seguridad que paralizan plataformas institucionales. Ver cómo un incidente puede generar un efecto dominó en los servidores me hizo entender la enorme responsabilidad que recae sobre el personal técnico de infraestructura.</p>
+            </div>
+
+            <div class="reflection-block">
+                <h3>¿Dónde se aplica y su valor profesional?</h3>
+                <p>Se aplica en la protección diaria de cualquier infraestructura tecnológica, bases de datos y desarrollo web. Para mí, como estudiante de ingeniería, comprender cómo se defienden los sistemas y cómo opera un antivirus es crucial. Ya sea configurando una red simulada, administrando un servidor físico en un data center o subiendo código a GitHub, la ciberseguridad debe implementarse desde el primer día para evitar brechas que comprometan la continuidad de toda una organización.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Portafolio de Ingeniería en Sistemas | GitHub Pages
